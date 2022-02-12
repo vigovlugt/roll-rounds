@@ -1,0 +1,22 @@
+{
+    "name": "roll-rounds-server",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --sourcemap",
+        "dev": "nodemon --exec \"yarn build && yarn start\"",
+        "start": "node --enable-source-maps dist/index.js"
+    },
+    "dependencies": {
+        "@types/ws": "^8.2.2",
+        "bitecs": "^0.3.34",
+        "mitt": "^3.0.0",
+        "roll-rounds-shared": "*",
+        "ws": "^8.4.2"
+    },
+    "devDependencies": {
+        "esbuild": "^0.14.18",
+        "nodemon": "^2.0.15"
+    }
+}

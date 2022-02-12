@@ -1,0 +1,15 @@
+{
+    "name": "roll-rounds-shared",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "license": "MIT",
+    "dependencies": {
+        "bitecs": "^0.3.34",
+        "matter-js": "^0.18.0"
+    },
+    "devDependencies": {
+        "@types/matter-js": "^0.17.7",
+        "prettier": "^2.5.1",
+        "typescript": "^4.5.5"
+    }
+}
